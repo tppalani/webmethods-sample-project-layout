@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                sh "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME}"
+                sh "/home/viswa/softwareag/common/lib/ant/bin/ant -DSAGHome=/home/viswa/softwareag -DSAG_CI_HOME=/home/viswa/CI_script/sagdevops-ci-assets -DprojectName=${env.JOB_NAME}"
             }
         }
         stage('Deploy') {
