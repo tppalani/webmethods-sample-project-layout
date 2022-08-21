@@ -24,7 +24,7 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=devops build"
+                bat "C:\SoftwareAG/common/lib/ant/bin/ant -DSAGHome=C:\SoftwareAG -DSAG_CI_HOME=$C:\sagdevops-ci-assets -DprojectName=devops build"
             }
         }
         stage('Deploy') {
