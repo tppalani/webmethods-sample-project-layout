@@ -24,12 +24,12 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                bat "C:/SoftwareAG/common/lib/ant/bin/ant -DSAGHome=C:/SoftwareAG -DSAG_CI_HOME=C:/sagdevops-ci-assets -DprojectName=webmethods-sample-project-layout deploy"
+                bat "C:/SoftwareAG/common/lib/ant/bin/ant -DSAGHome=C:/SoftwareAG -DSAG_CI_HOME=C:/sagdevops-ci-assets -DprojectName=webmethodssampleproject-layout build"
             }
         }
         stage('Deploy') {
             steps {
-		bat "C:/SoftwareAG/common/lib/ant/bin/ant -DSAGHome=C:/SoftwareAG -DSAG_CI_HOME=C:/sagdevops-ci-assets -DprojectName=webmethods-sample-project-layout deploy"
+		bat "C:/SoftwareAG/common/lib/ant/bin/ant -DSAGHome=C:/SoftwareAG -DSAG_CI_HOME=C:/sagdevops-ci-assets -DprojectName=one deploy"
             }
         }
  	
