@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-		bat "C:/SoftwareAG/common/lib/ant/bin/ant -DSAGHome=C:/SoftwareAG -DSAG_CI_HOME=C:/sagdevops-ci-assets -DprojectName=devops deploy"
+		bat "C:/SoftwareAG/common/lib/ant/bin/ant -DSAGHome=C:/SoftwareAG -DSAG_CI_HOME=C:/sagdevops-ci-assets -DprojectName=one deploy"
             }
         }
  	
