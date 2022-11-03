@@ -32,6 +32,12 @@ pipeline {
 		bat "C:/SoftwareAG/common/lib/ant/bin/ant -DSAGHome=C:/SoftwareAG -DSAG_CI_HOME=C:/sagdevops-ci-assets -DprojectName=apple deploy"
             }
         }
+	
+	stage('Test') {
+            steps {
+		bat "C:/SoftwareAG/common/lib/ant/bin/ant -DSAGHome=C:/SoftwareAG -DSAG_CI_HOME=C:/sagdevops-ci-assets -DprojectName=apple test"
+            }
+        }
  	
     }
 }
